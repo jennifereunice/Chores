@@ -1,15 +1,14 @@
 package com.fivethirty.chores;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class LoginView {
-
     public String userName = null;
-
     public ConstraintLayout loginLayout;
     public TextView appName;
 
