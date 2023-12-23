@@ -6,7 +6,6 @@ import android.graphics.Typeface;
 import android.widget.TextView;
 
 public class AppUtils {
-    public static boolean isDarkMode = false;
     public static void setTextView(TextView textView,String text,int size,int color){
         textView.setText(text);
         textView.setTextSize(size);

@@ -1,15 +1,13 @@
 package com.fivethirty.chores;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
-    private boolean isDark = false;
+    private final boolean isDark = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
-        LoginView loginView = new LoginView("",getApplicationContext());
+        LoginView loginView = new LoginView("", getApplicationContext());
         View contentView = loginView.getLoginLayout();
         setContentView(contentView);
     }
